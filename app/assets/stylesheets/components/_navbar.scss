@@ -4,6 +4,7 @@
   background-color: #FF7B7B;
   padding-top: 0px;
   padding-bottom: 0px;
+  box-shadow: 1px 1px 4px #6b6b6b;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -15,8 +16,10 @@
 }
 
 #logo-size {
-  width: 60px;
-  margin-left: 15px;
+  // width: 120px;
+  margin-left: 20px;
+  width: 176px;
+  height: 3rem;
 }
 
 .flex-container {
@@ -47,6 +50,13 @@ a.nav-link {
   text-shadow: 2px 2px 4px #000000;
 }
 
-// a.nav-link:hover {
-//   color: #FF7B7B;
-// }
+a.nav-link:hover {
+  color: #fcb2b2 !important;
+}
+
+a.dropdown-item:hover {
+  color: #ffffff;
+  opacity: 2;
+  background: #FF7B7B;
+  text-decoration: none;
+}
