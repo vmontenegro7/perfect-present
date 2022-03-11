@@ -1,43 +1,42 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img id="logo-size" src="https://res.cloudinary.com/vmontenegro7/image/upload/v1646926516/Perfect%20Present/perfect_present_logo_option_1_transparent_BG_ci2e9z.png"/>
-    </a>
+    <%= link_to "/", class: "navbar-brand" do %>
+      <%= image_tag "https://res.cloudinary.com/vmontenegro7/image/upload/v1646950863/Perfect%20Present/perfect_present_-logo_-_no_TRSPC_rcqtho.png", id: 'logo-size' %>
+    <% end %>
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
-
-            <div class="border"></div>
-            <li class="nav-item margin-zero active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-
-            <div class="border"></div>
-            <li class="nav-item margin-zero">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-
-            <div class="border"></div>
-            <li class="nav-item margin-zero">
-              <a class="nav-link" href="#">Most Chosen</a>
-            </li>
-
-            <div class="border"></div>
+        <% if user_signed_in? %>
+          <div class="border"></div>
+          <li class="nav-item margin-zero active">
+            <%= link_to "Home", "#", class: "nav-link" %>
+          </li>
+          <div class="border"></div>
+          <li class="nav-item margin-zero">
+            <%= link_to "About Us", "#", class: "nav-link" %>
+          </li>
+          <div class="border"></div>
+          <li class="nav-item margin-zero">
+            <%= link_to "Most Chosen", "#", class: "nav-link" %>
+          </li>
+          <div class="border"></div>
           <li class="nav-item dropdown">
-            <img class="avatar-large dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" />
+            <%= image_tag "https://res.cloudinary.com/vmontenegro7/image/upload/v1646951219/Perfect%20Present/pexels-yuri-manei-2766408_ohuitx.jpg", class: "avatar-large dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Wishlist</a>
-              <a class="dropdown-item" href="#">Log Out</a>
+              <%#= link_to "Action", "#", class: "dropdown-item" %>
+              <%= link_to "Wishlist", "#", class: "dropdown-item" %>
+              <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
             </div>
-    </div>
-
-          <%# </li>
+          </li>
+        <% else %>
           <li class="nav-item">
-          </li> %>
+          <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+          <li>
+        <% end %>
       </ul>
     </div>
   </div>
