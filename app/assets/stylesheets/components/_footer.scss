@@ -6,6 +6,7 @@
   align-items: flex-end;
   padding: 0 25px;
   padding-bottom: 20px;
+  box-shadow: 1px 1px 4px #000000;
 }
 
 .footer-links {
@@ -43,7 +44,7 @@
 .h4-footer {
   color: azure;
   font-family: $footer-font;
-  text-shadow: 2px 2px 4px #000000;
+  // text-shadow: 2px 2px 4px #000000;
 }
 
 .social-media {
