@@ -20,6 +20,8 @@
       <main id="main-content">
         <%= yield %>
       </main>
+      <%= render "shared/homepage_form" if user_signed_in?%>
+      <%= render "shared/testimonial" if user_signed_in? == false && controller_name == 'pages' || controller_name == 'presents' || controller_name == 'wishlists' %>
       <%= render "shared/footer" if controller_name == 'pages' || controller_name == 'presents' || controller_name == 'wishlists'%>
     </div>
   </body>
