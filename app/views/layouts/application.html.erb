@@ -10,10 +10,19 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://res.cloudinary.com/vmontenegro7/image/upload/v1647033402/Perfect%20Present/Perfect_Present_-_Navbar_Logo_-bg_txt_T.1_mntu2h.png"/>
   </head>
 
   <body>
   <%= render "shared/navbar" if controller_name == 'pages' || controller_name == 'presents' || controller_name == 'wishlists'%>
     <%= yield %>
+    <div class="page-container">
+      <%= render "shared/navbar" %>
+      <main id="main-content>"
+        <%= yield %>
+      </main>
+      <%= render "shared/footer" %>
+    </div>
   </body>
 </html>
