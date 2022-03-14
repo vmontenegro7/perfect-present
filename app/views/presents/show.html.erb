@@ -1,0 +1,11 @@
+<div class="card">
+  <h5 class="card-title"><%= @product["title"] %></h5>
+  <p class="card-text">
+    <%= @product["price"] %>
+  </p>
+  <p class="card-text">
+    <%= @product["description"]%>
+  </p>
+  <img src="<%=@product["image"]%>" alt="" style="width:10%; height:10%">
+  <%= button_to "Wishlist Me!", wishlists_path, class: 'btn btn-primary', :method => :post %>
+</div>
