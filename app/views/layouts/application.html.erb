@@ -13,7 +13,7 @@
   </head>
 
   <body>
-  <%= render "shared/navbar" %>
+  <%= render "shared/navbar" if controller_name == 'pages' || controller_name == 'presents' || controller_name == 'wishlists'%>
     <%= yield %>
   </body>
 </html>
