@@ -1,0 +1,60 @@
+.login-container-right {
+  position: absolute;
+  width: 894px;
+  height: 1646px;
+  left: 570px;
+  top: 69px;
+  background: rgba(255, 123, 123, 0.04);
+}
+
+.login-container-left {
+  position: absolute;
+  width: 531px;
+  height: 1768px;
+  left: 0px;
+  top: 0px;
+  background: #FFDFDF;
+  border: 1px solid #FF7B7B;
+  box-sizing: border-box;
+}
+
+
+#login {
+  justify-content: center;
+}
+
+// .form-control.string.email.optional {
+//   position: absolute;
+//   left: 0.16%;
+//   right: -0.16%;
+//   top: 38.83%;
+//   bottom: 45.83%;
+//   background: #FCE5E5;
+//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+//   border-radius: 20px;
+//   transform: rotate(0.16deg);
+// }
+
+.button-login{
+  background-color: #FFFFFF;
+  width: 541.16px;
+  height: 80.71px;
+  mix-blend-mode: normal;
+  border: 8px solid #ff6c6c;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 54px;
+  transform: rotate(0.16deg);
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 60px;
+  text-align: center;
+  color: #ff6c6c;
+  transition: background 0.3s ease;
+}
+.button-login:hover{
+  background: #ff6c6c;
+  color: white;
+}
