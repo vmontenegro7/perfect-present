@@ -7,3 +7,25 @@
 .carousel-item {
   margin-top: 25px;
 }
+
+.page-container {
+display: grid;
+grid-template-rows: auto 1fr auto;
+min-height: 100vh;
+}
+
+h1 {
+  color: #FF7B7B;
+  font-family: $footer-font;
+  display: flex;
+  align-content: flex-start;
+  text-shadow: 1px 1px 1px #acabab;
+}
+
+.p-carousel {
+  // color: #747474;
+  color: azure;
+  display: flex;
+  align-content: flex-start;
+  padding-bottom: 27rem;
+}
