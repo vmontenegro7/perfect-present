@@ -1,46 +1,47 @@
-.login-container-right {
-  position: absolute;
+.form-signin{
+  margin-left: 30%; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+  height: 450px;
   width: 894px;
-  height: 1646px;
-  left: 570px;
-  top: 69px;
+  left: 569px;
+  top: 63px;
+  border-radius: 0px;
   background: rgba(255, 123, 123, 0.04);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+
+
+}
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 27%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color:#FFDFDF; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
 }
 
-.login-container-left {
-  position: absolute;
-  width: 531px;
-  height: 1768px;
-  left: 0px;
-  top: 0px;
-  background: #FFDFDF;
-  border: 1px solid #FF7B7B;
-  box-sizing: border-box;
-}
-
-
-#login {
-  justify-content: center;
-}
-
-// .form-control.string.email.optional {
-//   position: absolute;
-//   left: 0.16%;
-//   right: -0.16%;
-//   top: 38.83%;
-//   bottom: 45.83%;
-//   background: #FCE5E5;
-//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-//   border-radius: 20px;
-//   transform: rotate(0.16deg);
-// }
-
-.button-login{
-  background-color: #FFFFFF;
+.button-log-in{
+  background-color: #FFFBFB;
   width: 541.16px;
   height: 80.71px;
   mix-blend-mode: normal;
-  border: 8px solid #ff6c6c;
+  border: 8px solid #FF7B7B;
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 54px;
@@ -51,10 +52,117 @@
   font-size: 35px;
   line-height: 60px;
   text-align: center;
-  color: #ff6c6c;
+  color: #FF7B7B;
   transition: background 0.3s ease;
+  margin-top: 1rem;
 }
-.button-login:hover{
+.button-log-in:hover{
   background: #ff6c6c;
   color: white;
+}
+// button sign-up styling
+
+
+// end of button sign-up styling
+.credential-header{
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 121px;
+  text-align: center;
+  color: #FFFFFF;
+  -webkit-text-stroke: 3px #7B0B0B78;
+}
+
+.credential-header-position{
+  position: relative;
+  left: 0px;
+  right: 0px;
+  top: 15%;
+  bottom: 0px;
+}
+
+// this is for the form label fields
+.form-label{
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 60px;
+  text-align: center;
+  color: #FF5454;
+}
+// this is for the form input fields
+.form-control{
+  left: 41.09%;
+  right: 5.02%;
+  top: 36.74%;
+  bottom: 56.77%;
+  background: #FCE5E5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  width: 746.86px;
+  height: 70.8px;
+  font-size: 20px;
+}
+
+.form-control::placeholder{
+  color: #A59D9D;
+}
+
+.form-control:focus {
+  color: #fc7575;
+  font-size: 24px;
+  background-color: #ffffff;
+  border-color: #fc7575;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(247, 154, 154,  0.71);
+}
+.form-actions{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+}
+.container2{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.sidenav img{
+  width: 300px;
+  margin-left: 3rem;
+}
+
+.button-forgot-password {
+  background-color: #FF7B7B;
+  width: 541.16px;
+  height: 80.71px;
+  mix-blend-mode: normal;
+  border: 8px solid #FFFFFF;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 54px;
+  transform: rotate(0.16deg);
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 60px;
+  text-align: center;
+  color: #FFFBFB;
+  transition: background 0.3s ease;
+  margin: 10px;
+}
+
+.button-forgot-password:hover{
+  background: #ffffff;
+  color: #FF7B7B;
 }
