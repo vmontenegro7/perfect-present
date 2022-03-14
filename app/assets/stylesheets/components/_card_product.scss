@@ -1,0 +1,38 @@
+.card-img-top{
+  width: 30%;
+  height: 40%;
+}
+.card{
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 33px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #ff7b7b;
+}
+.card-title{
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 29px;
+  text-align: center;
+  color: #FFFFFF;
+  -webkit-text-stroke: 1.5px #7B0B0B78;
+}
+
+.btn.btn-primary{
+  background-color: rgb(251, 191, 191);
+  text-shadow: 1px 1px 2px #000000;
+  border-radius: 38px;
+  border: 4px solid #ff7070;
+  width: 250px;
+  height: 70px;
+  font-size: larger;
+
+}
+.btn.btn-primary:hover{
+  background: #ff6c6c;
+  color: white;
+}
