@@ -10,7 +10,9 @@ Rails.application.routes.draw do
   # end
 
   resources :presents
-
+  # resources :pages, only: [:index]
+  resources :wishlists, only: %i[index new create destroy]
+  get "/pages", to: "pages#category"
   # resources :pages
   # resources :wishlist
 
