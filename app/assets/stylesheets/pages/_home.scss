@@ -28,4 +28,11 @@ h1 {
   display: flex;
   align-content: flex-start;
   padding-bottom: 27rem;
+  font-size: 1rem;
+}
+
+.carousel-titles {
+  color: #FF7B7B;
+  font-family: $footer-font;
+  text-shadow: 2px 2px 1px #ffffff;
 }
