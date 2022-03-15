@@ -1,8 +1,9 @@
 // Form Title
 .form-title {
   block-size: 10rem;
-  margin-bottom: 4rem;
-  padding-left: 25rem;
+  margin-bottom: 3rem;
+  padding-left: 15rem;
+  margin-top: 2rem;
 }
 
 // Form Body
@@ -24,9 +25,38 @@
   // color: #FFFBFB;
   // transition: background 0.3s ease;
   margin: 10px;
+  margin-left: 27rem;
   padding-left: 2rem;
   // margin-right: 400px;
 }
 .button {
+  color: white;
+  background-color: #FF7B7B;
+  margin-bottom: 5rem;
+  margin-left: 38rem;
+  margin-top: 3rem;
+  border-radius: 54px;
+  border: 8px solid #FFFFFF;
+}
+
+.button:hover {
   color: #FF7B7B;
+  background-color: white;
+  margin-bottom: 5rem;
+
+}
+
+// Paragraph Form
+
+.p-user-form {
+  color: #EA6079;
+  font-size: 22px;
+  text-align: center;
+  padding-bottom: 1rem;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.25));;
+}
+
+// submit button
+.submit-btn {
+  margin-bottom: 2rem;
 }
