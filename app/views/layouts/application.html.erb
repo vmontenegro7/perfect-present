@@ -15,13 +15,13 @@
   </head>
 
   <body>
-  <%= render "shared/navbar" if controller_name == 'pages' || controller_name == 'presents' || controller_name == 'wishlists'%>
-    <div class="page-container">
+  <div class="page-container">
+      <%= render "shared/navbar" if controller_name == 'pages' || controller_name == 'presents' || controller_name == 'wishlists'%>
       <main id="main-content">
         <%= yield %>
       </main>
-      <%= render "shared/homepage_form" if user_signed_in?%>
-      <%= render "shared/testimonial" if user_signed_in? == false && controller_name == 'pages' || controller_name == 'presents' || controller_name == 'wishlists' %>
+      <%= render "shared/homepage_form" if user_signed_in? && controller_name == 'pages' && action_name == 'home' %>
+      <%= render "shared/testimonial" if user_signed_in? == false && controller_name == 'pages' && action_name == 'home' %>
       <%= render "shared/footer" if controller_name == 'pages' || controller_name == 'presents' || controller_name == 'wishlists'%>
     </div>
   </body>

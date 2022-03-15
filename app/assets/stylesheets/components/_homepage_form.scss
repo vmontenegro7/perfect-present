@@ -1,0 +1,32 @@
+// Form Title
+.form-title {
+  block-size: 10rem;
+  margin-bottom: 4rem;
+  padding-left: 25rem;
+}
+
+// Form Body
+.form-body {
+  background-color: #FF7B7B;
+  color: rgb(255, 255, 255);
+  width: 450px;
+  height: 60px;
+  border: 8px solid #FFFFFF;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 54px;
+  // transform: rotate(0.16deg);
+  font-family: 'Merriweather';
+  // font-style: normal;
+  // font-weight: 700;
+  // line-height: 60px;
+  // text-align: center;
+  // color: #FFFBFB;
+  // transition: background 0.3s ease;
+  margin: 10px;
+  padding-left: 2rem;
+  // margin-right: 400px;
+}
+.button {
+  color: #FF7B7B;
+}
