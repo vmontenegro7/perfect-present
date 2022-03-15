@@ -15,8 +15,8 @@
   </head>
 
   <body>
-  <%= render "shared/navbar" if controller_name == 'pages' || controller_name == 'presents' || controller_name == 'wishlists'%>
-    <div class="page-container">
+  <div class="page-container">
+      <%= render "shared/navbar" if controller_name == 'pages' || controller_name == 'presents' || controller_name == 'wishlists'%>
       <main id="main-content">
         <%= yield %>
       </main>
