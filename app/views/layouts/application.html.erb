@@ -12,11 +12,14 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
 
     <link rel="shortcut icon" type="image/x-icon" href="https://res.cloudinary.com/vmontenegro7/image/upload/v1647033402/Perfect%20Present/Perfect_Present_-_Navbar_Logo_-bg_txt_T.1_mntu2h.png"/>
+
+    <%# <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script> %>
   </head>
 
   <body>
-  <%= render "shared/navbar" if controller_name == 'pages' || controller_name == 'presents' || controller_name == 'wishlists'%>
-    <div class="page-container">
+  <div class="page-container">
+      <%= render "shared/navbar" if controller_name == 'pages' || controller_name == 'presents' || controller_name == 'wishlists'%>
       <main id="main-content">
         <%= yield %>
       </main>
