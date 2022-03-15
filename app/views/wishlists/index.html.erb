@@ -1,1 +1,13 @@
-<h1><% @wishlist_items %></h1>
+
+<%@my_presents.each do |my_wishlist_item|%>
+  <div class="card-group">
+    <div class="card">
+      <img class="card-img-top" src="<%=my_wishlist_item["image_url"]%>" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title"><%= my_wishlist_item["title"] %></h5>
+        <p class="card-text"><small class="text-muted"><p><%= my_wishlist_item["rating"] %></p></small></p>
+        <%= button_to "Remove item from wishlist", wishlist_path(my_wishlist_item["id"]), class: 'btn btn-primary', :method => :delete %>
+      </div>
+    </div>
+  </div>
+  <% end %>
