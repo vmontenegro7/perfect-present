@@ -1,36 +1,44 @@
-<%
-require "json"
-require "open-uri"
-url = "https://testimonialapi.toolcarton.com/api"
-users_serialized = URI.open(url).read
-users = JSON.parse(users_serialized)
-%>
-<div class="container">
-
-
-<%users.each do |user|%>
-<div class="container testimonial_container inline-flex items-center flex flex-wrap">
-  <div class="cards testimonial_cards">
-    <i class="fa-solid fa-quote-right fa-3x"></i>
-    <p><%=user["message"]%></p>
-    <div>
-      <img src=<%=user["avatar"]%> id="testimonial_avatar" class="flex-shrink-0 object-center object-cover" alt=<%=user["name"]%>>
-
-      <span class="flex-grow flex flex-col pl-4">
-        <span>
-          <h4>
-            <strong><%=user["name"]%></strong>
-          </h4>
-        </span>
-        <span>
-         <%=user["designation"]%>
-        </span>
-      </span>
-
-    </div>
-
-  </div>
+<div class="flex-container container-fluid container-color">
+  <div class="flex-item"><h2 id="about-title">Lorem ipsum dolor</h2></div>
+  <div class="flex-item mt-5" id="testimonial-p"><p>
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. At blanditiis veritatis eaque!
+  Nisi illo dicta dolor possimus! Adipisci illo dignissimos sit at earum amet consequuntur quam.
+  Cupiditate dicta dolor nisi. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+  At blanditiis veritatis eaque! Nisi illo dicta dolor possimus! Adipisci illo dignissimos
+  sit at earum amet consequuntur quam. Cupiditate dicta dolor nisi. Lorem ipsum dolor, sit
+  amet consectetur adipisicing elit. At blanditiis veritatis eaque! Nisi illo dicta dolor
+  possimus! Adipisci illo dignissimos sit at earum amet consequuntur quam.
+  Cupiditate dicta dolor nisi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. At blanditiis veritatis eaque!
+  Nisi illo dicta dolor possimus! Adipisci illo dignissimos sit at earum amet consequuntur quam.
+  Cupiditate dicta dolor nisi.
+  </p></div>
 </div>
-<%end%>
 
+<div class="container" id="carousel-testimonials">
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="d-flex justify-content-center mx-auto">
+          <img src="https://res.cloudinary.com/vmontenegro7/image/upload/v1647445478/Perfect%20Present/Perfect_Present_Testimonials-05_i0fwum.png" class="d-block w-25 mx-3" alt="...">
+          <img src="https://res.cloudinary.com/vmontenegro7/image/upload/v1647445478/Perfect%20Present/Perfect_Present_Testimonials-02_bnq0z9.png" class="d-block w-25 mx-3" alt="...">
+          <img src="https://res.cloudinary.com/vmontenegro7/image/upload/v1647445478/Perfect%20Present/Perfect_Present_Testimonials-04_vprcwt.png" class="d-block w-25 mx-3" alt="...">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center mx-auto">
+          <img src="https://res.cloudinary.com/vmontenegro7/image/upload/v1647445478/Perfect%20Present/Perfect_Present_Testimonials-03_mym8vo.png" class="d-block w-25 mx-3" alt="...">
+          <img src="https://res.cloudinary.com/vmontenegro7/image/upload/v1647445478/Perfect%20Present/Perfect_Present_Testimonials-06_jwwn4p.png" class="d-block w-25 mx-3" alt="...">
+          <img src="https://res.cloudinary.com/vmontenegro7/image/upload/v1647445478/Perfect%20Present/Perfect_Present_Testimonials-01_tq4xna.png" class="d-block w-25 mx-3" alt="...">
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  </div>
 </div>
