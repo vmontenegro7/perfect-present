@@ -1,7 +1,7 @@
 .form-signin{
   margin-left: 30%; /* Same as the width of the sidebar */
   padding: 0px 10px;
-  height: 450px;
+  // height: 450px;
   width: 894px;
   left: 569px;
   top: 63px;
@@ -13,9 +13,9 @@
   justify-content: space-between;
   align-items: center;
   align-content: stretch;
-
-
+  padding: 30px;
 }
+
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 25%; /* Set the width of the sidebar */
@@ -70,7 +70,7 @@
   text-align: center;
   color: #FF7B7B;
   transition: background 0.3s ease;
-  margin-top: 1rem;
+  margin-top: 0rem;
 }
 .button-log-in:hover{
   background: #ff6c6c;
@@ -181,4 +181,8 @@
 .button-forgot-password:hover{
   background: #ffffff;
   color: #FF7B7B;
+}
+
+.container-signin {
+  transform: scale(0.6, 0.6);
 }
