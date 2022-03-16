@@ -1,7 +1,7 @@
 .form{
   margin-left: 30%; /* Same as the width of the sidebar */
   padding: 0px 10px;
-  height: 1646px;
+  // height: 1646px;
   width: 894px;
   left: 569px;
   top: 63px;
@@ -153,4 +153,8 @@
 .sidenav img{
   width: 300px;
   margin-left: 3rem;
+}
+
+.container-signup {
+  transform: scale(0.6, 0.6);
 }
