@@ -1,11 +1,9 @@
 .footer {
-  height: 200px;
+  height: 100px;
   background-color: #FF7B7B;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 0 25px;
-  padding-bottom: 20px;
   box-shadow: 1px 1px 4px #000000;
   width: 100%;
 }
@@ -24,11 +22,12 @@
   align-content: center;
   flex-direction: column;
   align-items: center;
+  transform: scale(0.7, 0.7);
 }
 
-.footer-links:hover {
-  color: #EA6079;
-}
+// .footer-links:hover {
+//   color: #EA6079;
+// }
 
 .text-muted {
   display: flex;
@@ -69,4 +68,14 @@
 
 .facebook {
   margin: 0 1rem;
+}
+
+.footer-phrase {
+  transform: scale(0.7, 0.7);
+}
+
+#footer-text {
+  color: white;
+  padding: 20px 0px;
+  font-family: $footer-font;
 }
