@@ -1,13 +1,14 @@
-<div class="container">
+<div class="container mt-2 mb-2">
+<h2 class="text-center fs-1">Categories</h2>
 <% @categories = @categories_array[0]%>
 <% @icons = @categories_array[1]%>
  <% @count = 0 %>
     <% @categories["categories"].each do |category|%>
-        <% if @count % 3 == 0 %>
+        <% if @count % 5 == 0 %>
           <div class="row justify-content-md-center">
         <% end %>
             <div class="card col col-lg-2">
-              <%= link_to category["name"], presents_path(category_id: category["id"]) %>
+              <%= link_to category["name"], presents_path(category_id: category["id"]), class: 'link_style' %>
               <%= category["id"] %>
               <% @icon_class = @icons.find do |icon|%>
                   <% icon[0] == category["id"] %>
@@ -15,7 +16,7 @@
               <i class="<%=@icon_class[1]%> fa-5x"></i>
             </div>
             <% @count += 1 %>
-          <% if @count % 3 == 0 %>
+          <% if @count % 5 == 0 %>
             </div>
         <% end %>
     <% end %>
@@ -23,7 +24,6 @@
 <i class="fa-solid fa-car"></i>
 <div class="container">
   <div class="row justify-content-md-center">
-
     <div class="col col-lg-2">
       1 of 3
     </div>

@@ -15,3 +15,30 @@
   //height: 225px;
   box-shadow: inset 5px 0px #ff7b7b;
 }
+.card.col.col-lg-2:hover a{
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+.link_style{
+  color: #ff7b7b;
+  text-decoration: none;
+}
+// .link_style:hover{
+//   color: white;
+// }
+// a, a:hover, a:focus, a:active {
+//   text-decoration: none;
+//   color: inherit;
+// }
+.text-center.fs-1 {
+  color: #FF7B7B;
+  font-family: $body-font;
+  text-shadow: 1px 1px 1px #acabab;
+}
+.fa-5x{
+  color:#ff5858;
+}
+.card.col.col-lg-2:hover .fa-5x{
+  color: white;
+}
