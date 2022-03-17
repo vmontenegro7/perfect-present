@@ -27,7 +27,16 @@
 .meet-team {
   font-family: $body-font;
   font-size: 50px;
-  text-shadow: 3px 3px 1px #0012FA;
-  color: #FF7B7B;
+  text-shadow: 3px 3px 1px #ff7a7ae7;
+  color: #ffffff;
   text-align: center;
+}
+.container-color-4 {
+  text-align: center;
+  align-items: center;
+  margin-top: 40px;
+  font-size: 3rem;
+  font-family: $footer-font;
+  font-weight: 700;
+  color: #0011fa;
 }
