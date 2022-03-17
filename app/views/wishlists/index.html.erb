@@ -3,79 +3,18 @@
 
 
     <% @my_wishlist_items_final.each do |wishlist_item_display| %>
-    <div class="col">
-    <div class="card h-100 w-65">
-      <h5 class="card-title"><%= wishlist_item_display["title"] %></h5>
-      <img src="<%=wishlist_item_display["pictures"][0]["secure_url"]%>" alt="" class="card-img-top" style="width:20%; height:10%">
-      <p class="card-text fs-3">
-        R$ <%= wishlist_item_display["price"] %>
-      </p>
-      <%= link_to "Purchase", wishlist_item_display["permalink"], target: :_blank, class: 'btn btn-primary m-2 p-3' %>
-      <%= link_to "Remove From Wishlist", wishlist_path(id: [user_id: current_user.id, api_id: wishlist_item_display["id"]]), class: 'btn btn-primary m-2 p-3', method: :delete %>
-    </div>
-    </div>
-    <% end %>
-
-
-
-  </div>
-  <%= link_to "Go back to categories", pages_path, class: 'btn btn-primary m-2 p-3'%>
-</div>
-<div class="container">
-<div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
-  <div class="col">
-    <div class="card h-100 w-65">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <div class="col mx-auto">
+      <div class="card h-auto w-auto">
+        <h5 class="card-title"><%= wishlist_item_display["title"] %></h5>
+        <img src="<%=wishlist_item_display["pictures"][0]["secure_url"]%>" alt="" class="card-img-top" style="width:60%; height:40%">
+        <p class="card-text fs-4">
+          R$ <%= wishlist_item_display["price"] %>
+        </p>
+          <%= link_to "Purchase", wishlist_item_display["permalink"], target: :_blank, class: 'btn btn-outline-danger mb-3', id:'purchase-button' %>
+          <%= link_to "Remove From Wishlist", wishlist_path(id: [user_id: current_user.id, api_id: wishlist_item_display["id"]]), class: 'btn btn-outline-danger', method: :delete %>
       </div>
     </div>
+      <% end %>
   </div>
-  <div class="col">
-    <div class="card h-100 w-65">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a short card.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100 w-65">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100 w-65">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100 w-65">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100 w-65">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-</div>
+    <%= link_to "Go back to categories", pages_path, class: 'btn btn-primary m-2 p-3'%>
 </div>

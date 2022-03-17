@@ -9,17 +9,19 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-  color: #ff7b7b;
+  color: #696969;
+}
+.card:hover {
+  border: 2px solid blue;
 }
 .card-title{
-  font-family: 'Merriweather';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
+  font-family: $footer-font;
+  // font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
   line-height: 29px;
   text-align: center;
-  color: #FFFFFF;
-  -webkit-text-stroke: 1.5px #7B0B0B78;
+  color: #696969;
 }
 
 .btn.btn-primary{
