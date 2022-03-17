@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container user-form">
   <img class="row-cols-lg-auto g-3 align-items-center form-title" src="https://res.cloudinary.com/vmontenegro7/image/upload/v1647358277/Perfect%20Present/perfect_present_zivhxr.png" alt="Perfect Present">
   <p class="p-user-form">Welcome! Please fill the form below to help you pick the<strong> PUUURRRFECT PRESENT 🐈</strong></p>
   <div class="row-cols-lg-auto g-3 align-items-center">
@@ -13,6 +13,7 @@
           <option value="4">R$ 500+</option>
         </select>
       </div>
+    </form>
   </div>
 
   <div class="row">
@@ -41,9 +42,7 @@
     </div>
   </div>
 
-    <div class="col-12">
-      <%= link_to "Check Your Selection", presents_path, :method => :get, id:"Form-submit-button", class:"btn btn-light button"%>
-    </div>
-  </form>
-  <div></div>
+  <div class="col-12 mx-center">
+    <%= link_to "Check Your Selection", presents_path, :method => :get, id:"Form-submit-button", class:"btn btn-light button"%>
+  </div>
 </div>
