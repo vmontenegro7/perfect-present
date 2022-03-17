@@ -6,6 +6,7 @@
   <p class="card-text">
     <%= @product["description"]%>
   </p>
-  <img src="<%=@product["image"]%>" alt="" style="width:10%; height:10%">
-  <%= button_to "Wishlist Me!", wishlists_path(present_id: @product ["id"]), class: 'btn btn-primary', :method => :post %>
+  <img src="<%=@product["pictures"][0]["secure_url"]%>" alt="" style="width:10%; height:10%">
+  <%= link_to "Purchase", @product["permalink"], target: :_blank, class: 'btn btn-primary m-2 p-3' %>
+  <%= button_to "Wishlist Me!", wishlists_path(api_id: @product ["id"]), class: 'btn btn-primary', :method => :post %>
 </div>
