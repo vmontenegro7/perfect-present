@@ -1,11 +1,10 @@
 
-<div class="card-group">
-  <%@products.each do |product|%>
+<div>
+  <%@products["results"].each do |product|%>
     <div class="card">
-      <img class="card-img-top" src="<%=product["image"]%>" alt="Card image cap">
+      <img class="card-img-top" src="<%=product["thumbnail"]%>" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title"><%= product["title"] %></h5>
-        <p class="card-text"><small class="text-muted"><p><%= product["rating"]["rate"] %></p></small></p>
         <%= button_to "Check Me Out!", present_path(product["id"]), class: 'btn btn-primary', :method => :get %>
       </div>
     </div>
