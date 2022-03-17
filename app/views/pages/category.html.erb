@@ -9,7 +9,6 @@
         <% end %>
             <div class="card col col-lg-2">
               <%= link_to category["name"], presents_path(category_id: category["id"]), class: 'link_style' %>
-              <%= category["id"] %>
               <% @icon_class = @icons.find do |icon|%>
                   <% icon[0] == category["id"] %>
               <% end %>
@@ -20,45 +19,4 @@
             </div>
         <% end %>
     <% end %>
-</div>
-<i class="fa-solid fa-car"></i>
-<div class="container">
-  <div class="row justify-content-md-center">
-    <div class="col col-lg-2">
-      1 of 3
-    </div>
-    <div class="col col-lg-2">
-      Variable width content
-    </div>
-    <div class="col col-lg-2">
-      3 of 3
-    </div>
-
-  </div>
-
-  <div class="row justify-content-md-center">
-    <div class="col col-lg-2">
-      1 of 3
-    </div>
-    <div class="col col-lg-2">
-      Variable width content
-    </div>
-    <div class="col col-lg-2">
-      3 of 3
-    </div>
- </div>
-
- <div class="row justify-content-md-center">
-    <div class="col col-lg-2">
-      1 of 3
-    </div>
-    <div class="col col-lg-2">
-      Variable width content
-    </div>
-    <div class="col col-lg-2">
-      3 of 3
-    </div>
- </div>
-
-
 </div>

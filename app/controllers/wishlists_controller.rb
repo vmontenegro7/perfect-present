@@ -36,8 +36,8 @@ class WishlistsController < ApplicationController
 
   def destroy
     # authorize @wishlist_item
-    @wishlist_item.destroy
-    redirect_to presents_path, notice: 'Item has been successufuly removed from your wishlist!'
+    @my_wishlist_item_to_delete.destroy
+    redirect_to wishlists_path, notice: 'Item has been successufuly removed from your wishlist!'
   end
 
   private
@@ -47,7 +47,14 @@ class WishlistsController < ApplicationController
   end
 
   def set_wish_list_item
-    @wishlist_item = Wishlist.find(params[:id])
+    @api_id = params[:id].split("&")[0].split("=")[1]
+    @user_id = params[:id].split("&")[1].split("=")[1].to_i
+    @my_wishlist_items = Wishlist.where(["user_id = ?", @user_id])
+    @my_wishlist_item_to_delete = @my_wishlist_items.where(["api_id = ?", @api_id])
+    # raise
+    # @wishlist_item = Wishlist.find(params[:id])# Wishlist.find(params[:id])
+    @my_wishlist_item_to_delete = @my_wishlist_item_to_delete[0]
+    # @wishlist_item = Wishlist.find(params[:id])
   end
 
   def request_api(item_id)
