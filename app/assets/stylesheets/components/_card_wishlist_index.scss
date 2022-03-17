@@ -2,7 +2,7 @@
   height: 100% !important;
 }
 .w-65 {
-  width: 65% !important;
+  width: 100% !important;
 }
 .card.col.col-lg-2{
   border-radius: 0;
@@ -33,12 +33,22 @@
 // }
 .text-center.fs-1 {
   color: #FF7B7B;
-  font-family: $body-font;
-  text-shadow: 1px 1px 1px #acabab;
+  font-family: $footer-font;
+  // text-shadow: 1px 1px 1px #acabab;
 }
 .fa-5x{
   color:#ff5858;
 }
 .card.col.col-lg-2:hover .fa-5x{
   color: white;
+}
+.btn-outline-danger {
+border-radius: 180px;
+color: #ff5858;
+border-color: #ff5858;
+}
+.btn-outline-danger:hover {
+  color: white;
+  background-color: #0012FA;
+  border-color: #0012FA;
 }
