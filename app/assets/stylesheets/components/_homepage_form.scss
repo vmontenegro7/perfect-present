@@ -33,7 +33,7 @@
   color: white;
   background-color: #FF7B7B;
   margin-bottom: 5rem;
-  margin-left: 38rem;
+  margin-left: 35rem;
   margin-top: 3rem;
   border-radius: 54px;
   border: 8px solid #FFFFFF;
@@ -49,14 +49,18 @@
 // Paragraph Form
 
 .p-user-form {
-  color: #EA6079;
+  color: #ffffff;
   font-size: 22px;
   text-align: center;
   padding-bottom: 1rem;
-  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.25));;
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.25));;
 }
 
 // submit button
-.submit-btn {
-  margin-bottom: 2rem;
+// .submit-btn {
+//   margin-bottom: 2rem;
+// }
+.user-form {
+  background-image: url("https://res.cloudinary.com/vmontenegro7/image/upload/c_scale,w_1320/v1647030335/Perfect%20Present/pexels-karolina-grabowska-5705984_feja1v.jpg");
+  margin-bottom: 1rem;
 }
