@@ -1,13 +1,70 @@
+<div class="card">
+  <% @my_wishlist_items_final.each do |wishlist_item_display| %>
+    <h5 class="card-title"><%= wishlist_item_display["title"] %></h5>
+    <img src="<%=wishlist_item_display["pictures"][0]["secure_url"]%>" alt="" style="width:20%; height:10%">
+    <p class="card-text fs-3">
+      R$ <%= wishlist_item_display["price"] %>
+    </p>
+    <%= link_to "Purchase", wishlist_item_display["permalink"], target: :_blank, class: 'btn btn-primary m-2 p-3' %>
+  <% end %>
+  <%= link_to "Go back to categories", pages_path, class: 'btn btn-primary m-2 p-3'%>
+</div>
 
-<%@my_presents.each do |my_wishlist_item|%>
-  <div class="card-group">
-    <div class="card">
-      <img class="card-img-top" src="<%=my_wishlist_item["image_url"]%>" alt="Card image cap">
+<div class="container">
+<div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+  <div class="col">
+    <div class="card h-100 w-65">
+      <img src="..." class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title"><%= my_wishlist_item["title"] %></h5>
-        <p class="card-text"><small class="text-muted"><p><%= my_wishlist_item["rating"] %></p></small></p>
-        <%= button_to "Remove item from wishlist", wishlist_path(my_wishlist_item["id"]), class: 'btn btn-primary', :method => :delete %>
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>
   </div>
-  <% end %>
+  <div class="col">
+    <div class="card h-100 w-65">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a short card.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 w-65">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 w-65">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 w-65">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 w-65">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
