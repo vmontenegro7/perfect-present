@@ -1,28 +1,31 @@
-<div class="sidenav-forgot-password "></div>
-<div class="white-side-bar"></div>
 
-  <div>
-      <img class="forgot-image" src="https://res.cloudinary.com/vmontenegro7/image/upload/v1647268322/Perfect%20Present/perfect_present_-_login_page_logo_-_2_wzj283.png" alt="Perfect Present Logo">
-  </div>
+  <div class="sidenav-forgot-password "></div>
+  <div class="white-side-bar"></div>
 
-<div class="container-pink-box"></div>
-  <div class="container-forgot">
-    <h2 class="forgot-text">Enter your email  to reset your password.</h2>
-    <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-      <%= f.error_notification %>
+  <div class="container-resize">
+    <div>
+        <img class="forgot-image" src="https://res.cloudinary.com/vmontenegro7/image/upload/v1647268322/Perfect%20Present/perfect_present_-_login_page_logo_-_2_wzj283.png" alt="Perfect Present Logo">
+    </div>
 
-      <div class="form-inputs">
-        <%= f.input :email,
-                    required: true,
-                    autofocus: true,
-                    input_html: { autocomplete: "email" } %>
+  <div class="container-pink-box"></div>
+    <div class="container-forgot">
+      <h2 class="forgot-text">Enter your email  to reset your password.</h2>
+      <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+        <%= f.error_notification %>
+
+        <div class="form-inputs">
+          <%= f.input :email,
+                      required: true,
+                      autofocus: true,
+                      input_html: { autocomplete: "email" } %>
+        </div>
+
+        <div class="form-actions">
+          <%= f.button :submit, "Continue", class: 'button-forgot-password-main' %>
+          <%= link_to "Log In", new_user_session_path, class: 'button-forgot-password-login' %>
+        </div>
+      <%= render "devise/shared/links", class: 'forgot-password-link' %>
       </div>
-
-      <div class="form-actions">
-        <%= f.button :submit, "Continue", class: 'button-forgot-password-main' %>
-        <%= link_to "Log In", new_user_session_path, class: 'button-forgot-password-login' %>
-      </div>
-    <%= render "devise/shared/links", class: 'forgot-password-link' %>
+    </div>
   </div>
-</div>
   <% end %>
