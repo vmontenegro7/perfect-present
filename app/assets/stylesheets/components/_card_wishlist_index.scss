@@ -4,3 +4,14 @@
 .w-65 {
   width: 65% !important;
 }
+.card.col.col-lg-2{
+  border-radius: 0;
+  margin: 0;
+}
+.card.col.col-lg-2:hover{
+  background-color: #ff7b7b;
+  color: white;
+  //width: 225px;
+  //height: 225px;
+  box-shadow: inset 5px 0px #ff7b7b;
+}
