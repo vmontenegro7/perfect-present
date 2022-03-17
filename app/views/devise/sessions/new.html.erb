@@ -24,8 +24,8 @@
 
     <div class="form-actions">
       <%= f.button :submit, "Log In", class: "button-log-in" %>
-      <%= f.button :submit, "Forgot Your Password", class: "button-forgot-password" %>
-      <%= f.button :submit, "Sign Up", class: "button-log-in" %>
+      <%=  link_to "Forgot Your Password", new_user_password_path, class: "button-forgot-password" %>
+      <%=  link_to "Sign Up", new_user_registration_path, class: "button-log-in" %>
       <%# <%= render "devise/shared/links" %>
     </div>
   </div>

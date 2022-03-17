@@ -20,7 +20,7 @@
 
       <div class="form-actions">
         <%= f.button :submit, "Continue", class: 'button-forgot-password-main' %>
-        <%= f.button :submit, "Log In", class: 'button-forgot-password-login' %>
+        <%= link_to "Log In", new_user_session_path, class: 'button-forgot-password-login' %>
       </div>
     <%= render "devise/shared/links", class: 'forgot-password-link' %>
   </div>

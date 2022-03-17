@@ -33,7 +33,7 @@
 
         <div class="form-actions">
           <%= f.button :submit, "Sign up", class: 'button-sign-up' %>
-          <%= button_to "Log in", user_session_path, class: 'button-sign-in'  %>
+          <%= link_to "Log in", new_user_session_path, class: 'button-sign-in', method: :get  %>
         </div>
       <% end %>
 
