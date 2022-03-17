@@ -1,0 +1,117 @@
+.container-team {
+  // height: 100vh;
+  // width: 100vw;
+  // max-height: 700px;
+  // max-width: 1280px;
+  // min-height: 600px;
+  // min-width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+.border {
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+  border: 1px solid #FF7B7B !important;
+}
+.border:hover {
+  border: 4px solid #FF7B7B !important;
+}
+.card {
+  height: 300px;
+  width: 300px;
+  background: rgb(255, 255, 255);
+  border-radius: 20px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: black;
+  box-shadow: 0 70px 63px -60px #ff4545;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.card0 {
+  background: url('https://res.cloudinary.com/vmontenegro7/image/upload/v1647526200/Perfect%20Present/carlos_profile_picture_2_hbj4gb.jpg') center center no-repeat;
+  background-size: 300px;
+}
+.card0:hover {
+  background: url('https://res.cloudinary.com/vmontenegro7/image/upload/v1647526200/Perfect%20Present/carlos_profile_picture_2_hbj4gb.jpg') left center no-repeat;
+  background-size: 600px;
+}
+.team-h2:hover {
+  opacity: 1;
+}
+.fa:hover {
+  opacity: 1;
+}
+.card1 {
+  background: url('https://res.cloudinary.com/vmontenegro7/image/upload/v1647435851/Perfect%20Present/Screen_Shot_2022-03-16_at_08.02.10_hsd1mi.png') center center no-repeat;
+  background-size: 300px;
+}
+.card1:hover {
+    background: url('https://res.cloudinary.com/vmontenegro7/image/upload/v1647435851/Perfect%20Present/Screen_Shot_2022-03-16_at_08.02.10_hsd1mi.png') left center no-repeat;
+    background-size: 600px;
+}
+.team-h2:hover {
+      opacity: 1;
+}
+.fa:hover {
+      opacity: 1;
+}
+.card2 {
+  background: url('https://res.cloudinary.com/vmontenegro7/image/upload/v1647527917/Perfect%20Present/profilegit_dkkmrp.jpg') center center no-repeat;
+  background-size: 300px;
+}
+.card2:hover {
+  background: url('https://res.cloudinary.com/vmontenegro7/image/upload/v1647527917/Perfect%20Present/profilegit_dkkmrp.jpg') left center no-repeat;
+  background-size: 600px;
+}
+.team-:hover {
+  opacity: 1;
+}
+.fa:hover {
+  opacity: 1;
+}
+.card3 {
+  background: url('https://res.cloudinary.com/vmontenegro7/image/upload/v1647538322/Perfect%20Present/profile-pic_gbpx7k.jpg') center center no-repeat;
+  background-size: 300px;
+}
+.card3:hover {
+  background: url('https://res.cloudinary.com/vmontenegro7/image/upload/v1647538322/Perfect%20Present/profile-pic_gbpx7k.jpg') left center no-repeat;
+  background-size: 600px;
+}
+.team-:hover {
+  opacity: 1;
+}
+.fa:hover {
+  opacity: 1;
+}
+.team-h2 {
+  font-family: $footer-font;
+  color:#0012FA;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.fa-github {
+  opacity: 0;
+  transition: opacity 1s;
+}
+.icons {
+  position: relative;
+  fill: #fff;
+  color: #FF7B7B;
+  height: 130px;
+  top: 226px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  }
