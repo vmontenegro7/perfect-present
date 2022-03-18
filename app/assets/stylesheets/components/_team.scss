@@ -5,8 +5,8 @@
   margin: 0 auto;
 }
 .border-team {
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   background: transparent;
   border-radius: 10px;
   transition: border 1s;
@@ -14,9 +14,9 @@
   border: 1px solid #ff7b7b00 !important;
   border-top: 0 solid rgba(255, 0, 0, 0) !important;
 }
-.border-team:hover {
-  border: 4px solid #FF7B7B !important;
-}
+// .border-team:hover {
+//   border: 4px solid blue !important;
+// }
 .card-team {
   height: 300px;
   width: 300px;
@@ -25,7 +25,7 @@
   transition: background 0.8s;
   overflow: hidden;
   background: black;
-  box-shadow: 10px 10px 8px #ff7a7ae7;
+  box-shadow: 10px 10px 8px #ffffffe7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,6 +38,8 @@
 .card-team-0:hover {
   background: url('https://res.cloudinary.com/vmontenegro7/image/upload/v1647526200/Perfect%20Present/carlos_profile_picture_2_hbj4gb.jpg') left center no-repeat;
   background-size: 500px;
+  box-shadow: 10px 10px 8px blue;
+  border: 4px solid blue !important;
 }
 .team-h2:hover {
   opacity: 1;
@@ -47,8 +49,10 @@
   background-size: 300px;
 }
 .card-team-1:hover {
-    background: url('https://res.cloudinary.com/vmontenegro7/image/upload/v1647435851/Perfect%20Present/Screen_Shot_2022-03-16_at_08.02.10_hsd1mi.png') left center no-repeat;
-    background-size: 500px;
+  background: url('https://res.cloudinary.com/vmontenegro7/image/upload/v1647435851/Perfect%20Present/Screen_Shot_2022-03-16_at_08.02.10_hsd1mi.png') left center no-repeat;
+  background-size: 500px;
+  box-shadow: 10px 10px 8px #ff8801e7;
+  border: 4px solid #ff8801e7 !important;
 }
 .team-h2:hover {
       opacity: 1;
@@ -60,6 +64,8 @@
 .card-team-2:hover {
   background: url('https://res.cloudinary.com/vmontenegro7/image/upload/v1647527917/Perfect%20Present/profilegit_dkkmrp.jpg') left center no-repeat;
   background-size: 500px;
+  box-shadow: 10px 10px 8px #4eb0e6;
+  border: 4px solid #4eb0e6 !important;
 }
 .team-h2:hover {
   opacity: 1;
@@ -71,6 +77,8 @@
 .card-team-3:hover {
   background: url('https://res.cloudinary.com/vmontenegro7/image/upload/v1647538322/Perfect%20Present/profile-pic_gbpx7k.jpg') left center no-repeat;
   background-size: 500px;
+  box-shadow: 10px 10px 8px #fffb01e7;
+  border: 4px solid #fffb01e7 !important;
 }
 .team-h2:hover {
   opacity: 1;
@@ -81,12 +89,27 @@
   margin: 20px;
   opacity: 0;
   transition: opacity 1s;
+  padding-top: 170px;
 }
-.container-color-2 {
-  background: linear-gradient(to top, #ff7a7ae7, #ffffffcc);
-  // background-color: #0011fa;
+.container-color-3 {
+  background-color: #fcdad9;
 }
-// .container-color-3 {
-//   background: linear-gradient(to bottom, #ff7a7ae7, #ffffffcc);
-//   // background-image: url('https://res.cloudinary.com/vmontenegro7/image/upload/c_scale,w_1512/v1647547942/Perfect%20Present/pexels-gdtography-911738_headdw.jpg');
-// }
+.container-color-5 {
+  text-align: center;
+  align-items: center;
+  margin-top: 90px;
+  font-size: 3rem !important;
+  font-family: $title-font !important;
+  font-weight: 900 !important;
+  color: #ff9b00;
+  border-bottom: 4px solid #ff9b00;
+  background-color: #fcdad9;
+}
+
+#about-subtitle {
+  font-size: 4rem;
+  font-family: $footer-font;
+  font-weight: 900;
+  color: #ff7b00;
+  margin-top: 3rem;
+}

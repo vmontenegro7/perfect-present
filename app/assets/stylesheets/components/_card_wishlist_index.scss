@@ -24,13 +24,7 @@
   color: #ff7b7b;
   text-decoration: none;
 }
-// .link_style:hover{
-//   color: white;
-// }
-// a, a:hover, a:focus, a:active {
-//   text-decoration: none;
-//   color: inherit;
-// }
+
 .text-center.fs-1 {
   color: #FF7B7B;
   font-family: $footer-font;
@@ -44,11 +38,12 @@
 }
 .btn-outline-danger {
 border-radius: 180px;
-color: #ff5858;
-border-color: #ff5858;
+color: #ffffff;
+background-color: #fc6767;
+border-color: #fc676700;
 }
 .btn-outline-danger:hover {
   color: white;
-  background-color: #0012FA;
-  border-color: #0012FA;
+  background-color: #f39302;
+  border-color: #f39302;
 }
