@@ -39,10 +39,20 @@ class PagesController < ApplicationController
     "MLB264586"=> nil,
     "MLB1540"=> nil,
     "MLB1953"=> nil}
+
+    @icons_array = @icons_array.select do |_api_id_, icon_class|
+      icon_class.nil? == false
+    end
+
+    @categories = @categories["categories"].select do |category|
+      @icons_array.include?(category["id"])
+    end
+
     @categories_array = [@categories, @icons_array]
   end
 
   private
+
   def request_api
     # url = "https://web.archive.org/web/20220203090926/https://fakestoreapi.com/products/categories"
     url = "https://api.mercadolibre.com/sites/MLB#json"
