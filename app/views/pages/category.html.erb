@@ -3,7 +3,7 @@
 <% @categories = @categories_array[0]%>
 <% @icons = @categories_array[1]%>
  <% @count = 0 %>
-    <% @categories["categories"].each do |category|%>
+    <% @categories.each do |category|%>
         <% if @count % 5 == 0 %>
           <div class="row justify-content-md-center">
         <% end %>
