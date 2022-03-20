@@ -2,7 +2,7 @@
   <img class="row-cols-lg-auto g-3 align-items-center form-title" src="https://res.cloudinary.com/vmontenegro7/image/upload/v1647358277/Perfect%20Present/perfect_present_zivhxr.png" alt="Perfect Present">
   <p class="p-user-form">Welcome! Please fill the form below to help you pick the<strong> PUUURRRFECT PRESENT 🐈</strong></p>
   <div class="row-cols-lg-auto g-3 align-items-center">
-    <form class="row-cols-lg-auto g-3 align-items-center">
+    <form class="row-cols-lg-auto g-3 align-items-center" action="/pages">
       <div class="col-12">
         <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
         <select class="form-select form-body" id="inlineFormSelectPref">
@@ -13,28 +13,27 @@
           <option value="4">R$ 500+</option>
         </select>
       </div>
-    </form>
-  </div>
 
-  <div class="row">
-    <div class="col-12">
-      <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
-      <select class="form-select form-body" id="inlineFormSelectPref">
-        <option selected>What's their age?</option>
-        <option value="1">0-2</option>
-        <option value="2">3-12</option>
-        <option value="3">13-19</option>
-        <option value="4">20-29</option>
-        <option value="5">30-39</option>
-        <option value="6">40-49</option>
-        <option value="7">50-59</option>
-        <option value="8">60-69</option>
-        <option value="9">70-79</option>
-        <option value="10">80-89</option>
-        <option value="11">90+</option>
-      </select>
+    <div class="row">
+      <div class="col-12">
+        <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+        <select class="form-select form-body" id="inlineFormSelectPref">
+          <option selected>What's their age?</option>
+          <option value="1">0-2</option>
+          <option value="2">3-12</option>
+          <option value="3">13-19</option>
+          <option value="4">20-29</option>
+          <option value="5">30-39</option>
+          <option value="6">40-49</option>
+          <option value="7">50-59</option>
+          <option value="8">60-69</option>
+          <option value="9">70-79</option>
+          <option value="10">80-89</option>
+          <option value="11">90+</option>
+        </select>
+      </div>
     </div>
-  </div>
+
 
   <div class="row">
     <div class="col-12">
@@ -50,9 +49,34 @@
         <option value="7">Cooking</option>
       </select>
     </div>
+
+
+
+
+
+    </form>
   </div>
 
+</div>
+<div class="container user-form">
+  <%= form_with url: pages_path, local: true, method: :get do %>
+    <div>
+   <%= label_tag "hobby" %>
+   <%= select_tag "hobby", options_for_select(["collectables", "DIY", "Fitness", "Social Media", "Self-care", "It's a baby", "Playing with friends", "Fashion", "Going out", "Outdoor activities", "Throwing parties", "Having people over", "Homebody", "Cooking", "Binge watching", "Geek"]
+), multiple: true, id: "hobby-dropdown-menu" %>
+  <%= label_tag "Price Range" %>
+  <%= select_tag "price_range",
+  options_for_select(["R$ 0 - 100", "R$ 100 - 300", "R$ 300 - 500", "R$ 500+"]),
+  prompt: "What's your budget?", class: 'form-select form-body', required: 'required'%>
+
+  <%= label_tag "What's their age?" %>
+  <%= select_tag "age_range",
+  options_for_select(["Baby","Children","Teenager","Adult","Elderly"]),
+  prompt: "What's their age?", class: 'form-select form-body', required: 'required'%>
+ </div>
+
   <div class="col-12 mx-center">
-    <%= link_to "Check Your Selection", presents_path, :method => :get, id:"Form-submit-button", class:"btn btn-light button"%>
+    <%= submit_tag ("Send Feedback"), id:"Form-submit-button", class:"btn btn-light button"%>
   </div>
+  <% end %>
 </div>
