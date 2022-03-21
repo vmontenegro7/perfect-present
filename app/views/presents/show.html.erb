@@ -1,3 +1,7 @@
+<% content_for :meta_title, "#{@product["title"]} is on #{DEFAULT_META["meta_product_name"]}" %>
+<% content_for :meta_description, @product["description"] %>
+<% content_for :meta_image, cl_image_path(@product["pictures"][0]["secure_url"]) %>
+
 <div class="card">
   <h5 class="card-title"><%= @product["title"] %></h5>
   <p class="card-text">

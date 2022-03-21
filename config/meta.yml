@@ -1,0 +1,11 @@
+# config/meta.yml
+
+meta_product_name: "Perfect Present"
+meta_title: "Perfect Present - Buying a special gift has never been this easy."
+meta_description: "Buying a thoughtful gift for a special someone, whether that be a family
+    member or a friend, can be a time-consuming and stressful process. The
+    Perfect Present Team wanted to alleviate this qualm by introducing a fluid,
+    user-friendly experience that can help you navigate these potentially
+    emotional and treacherous waters."
+meta_image: "perfect_present_logo.png" # should exist in `app/assets/images/`
+twitter_account: "@perfectpresent_twitter_account"   # required for Twitter Cards
