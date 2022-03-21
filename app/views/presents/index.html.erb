@@ -1,11 +1,21 @@
-<div>
-  <%@products.each do |product|%>
-    <div class="card">
-      <img class="card-img-top" src="<%=product["thumbnail"]%>" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title"><%= product["title"] %></h5>
-        <%= button_to "Check Me Out!", present_path(product["id"]), class: 'btn btn-primary', :method => :get %>
+<h2 class="text-center fs-1">Present Selection</h2>
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+
+
+    <%@products.each do |product|%>
+    <div class="col mx-auto">
+
+      <div class="card h-auto w-auto">
+       <img src="<%=product["thumbnail"]%>" alt="" class="card-img-top" style="width:60%; height:40%">
+       <h5 class="card-title"><%= product["title"] %></h5>
+       <p class="card-text fs-4">
+          R$ <%= product["price"] %>
+        </p>
+       <%= button_to "Check Me Out!", present_path(product["id"]), class: 'btn btn-primary', :method => :get %>
       </div>
+
     </div>
-  <% end %>
+      <% end %>
+  </div>
 </div>
