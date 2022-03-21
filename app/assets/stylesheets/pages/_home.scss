@@ -41,25 +41,13 @@ h1 {
   background-color: #ff6c6c;
 }
 
-@media (max-width: 320px)
-{
-  .form-title {
-    width: 90%;
-    height: auto;
-    padding-left: 2rem;
-  }
-
-  .form-body {
-    width: 90%;
-    margin-left: 18px;
-  }
-
-  .button {
-    margin-left: 0px;
-  }
+.margin-bottom {
+margin-bottom: 2rem;
+width: 100%;
 }
 
-@media (max-width: 375px)
+
+@media (max-width: 1024px)
 {
   .form-title {
     width: 90%;
@@ -68,31 +56,16 @@ h1 {
   }
 
   .form-body {
-    width: 90%;
-    margin-left: 0px;
+    width: 35%;
+    margin-left: 229px;
   }
 
   .button {
-    margin-left: 0px;
+    margin-left: 249px;
   }
 
-}
-
-@media (max-width: 425px)
-{
-  .form-title {
-    width: 90%;
-    height: auto;
-    padding-left: 2rem;
-  }
-
-  .form-body {
-    width: 90%;
-    margin-left: 0px;
-  }
-
-  .button {
-    margin-left: 0px;
+  .p-carousel {
+    padding-bottom: 10rem;
   }
 
 }
@@ -116,7 +89,7 @@ h1 {
 
 }
 
-@media (max-width: 1024px)
+@media (max-width: 425px)
 {
   .form-title {
     width: 90%;
@@ -125,16 +98,76 @@ h1 {
   }
 
   .form-body {
-    width: 35%;
-    margin-left: 229px;
+    width: 90%;
+    margin-left: 0px;
   }
 
   .button {
-    margin-left: 249px;
+    margin-left: 0px;
   }
 
-  .p-carousel {
-    padding-bottom: 10rem;
+}
+
+@media (max-width: 375px)
+{
+  .form-title {
+    width: 90%;
+    height: auto;
+    padding-left: 2rem;
   }
 
+  .form-body {
+    width: 90%;
+    margin-left: 0px;
+  }
+
+  .button {
+    margin-left: 44px;
+  }
+
+}
+
+@media (max-width: 320px)
+{
+  .form-title {
+    width: 90%;
+    height: auto;
+    padding-left: 2rem;
+  }
+
+  .form-body {
+    width: 90%;
+    margin-left: 18px;
+  }
+
+  .button {
+    margin-left: 44px;
+  }
+
+  .text-muted {
+    margin-left: 1rem;
+    padding-right: 2rem;
+  }
+
+  .margin-bottom {
+    margin-bottom: 2rem;
+    width: 84%;
+  }
+  .text-justify {
+    text-align: justify;
+    margin-right: 16rem;
+    letter-spacing: 2px;
+  }
+  .about-title {
+    margin-left: 0;
+  }
+
+  .carousel-inner {
+    position: relative;
+    width: 83%;
+    overflow: hidden;
+  }
+  #about-subtitle {
+    margin-right: 16rem;
+  }
 }
