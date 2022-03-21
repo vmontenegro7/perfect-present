@@ -1,22 +1,24 @@
-<div class="container mt-2 mb-2">
-<h2 class="text-center fs-1">Categories</h2>
-<% @categories = @categories_array[0]%>
-<% @icons = @categories_array[1]%>
- <% @count = 0 %>
-    <% @categories.each do |category|%>
-        <% if @count % 5 == 0 %>
-          <div class="row justify-content-md-center">
+<img src="https://res.cloudinary.com/dykks7d7x/image/upload/v1647887378/lacea_around_l9bzlq.png" class="background-category" >
+  <div class="container mt-5 mb-2 pt-5">
+    <h2 class="text-center fs-1 mt-5">Categories</h2>
+    <% @categories = @categories_array[0]%>
+    <% @icons = @categories_array[1]%>
+    <% @count = 0 %>
+        <% @categories.each do |category|%>
+            <% if @count % 5 == 0 %>
+              <div class="row justify-content-md-center">
+            <% end %>
+                <div class="card col col-lg-2 mt-3 " >
+                  <%= link_to category["name"], presents_path(category_id: category["id"], price_range: @categories_array[2]), class: 'link_style' %>
+                  <% @icon_class = @icons.find do |icon|%>
+                      <% icon[0] == category["id"] %>
+                  <% end %>
+                  <i class="<%=@icon_class[1]%> fa-5x"></i>
+                </div>
+                <% @count += 1 %>
+              <% if @count % 5 == 0 %>
+                </div>
+            <% end %>
         <% end %>
-            <div class="card col col-lg-2">
-              <%= link_to category["name"], presents_path(category_id: category["id"], price_range: @categories_array[2]), class: 'link_style' %>
-              <% @icon_class = @icons.find do |icon|%>
-                  <% icon[0] == category["id"] %>
-              <% end %>
-              <i class="<%=@icon_class[1]%> fa-5x"></i>
-            </div>
-            <% @count += 1 %>
-          <% if @count % 5 == 0 %>
-            </div>
-        <% end %>
-    <% end %>
+  </div>
 </div>
