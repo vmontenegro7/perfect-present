@@ -4,8 +4,8 @@
   <div class="row-cols-lg-auto g-3 align-items-center">
     <form class="row-cols-lg-auto g-3 align-items-center" action="/pages">
 
-    <%= form_with url: pages_path, local: true, method: :get do %>
-      <div>
+      <%= form_with url: pages_path, local: true, method: :get do %>
+        <div>
           <%= select_tag "price_range",
           options_for_select(["R$ 0 - 100", "R$ 100 - 300", "R$ 300 - 500", "R$ 500+"]),
           prompt: "What's your budget?", class: 'form-select form-body', required: 'required'%>
@@ -23,8 +23,9 @@
         </div>
 
         <div class="col-12 mx-center">
-            <%= submit_tag ("Submit"), id:"Form-submit-button", class:"btn btn-light button"%>
+          <%= submit_tag ("Submit"), id:"Form-submit-button", class:"btn btn-light button"%>
         </div>
-    <% end %>
+      <% end %>
     </form>
+  </div>
 </div>
