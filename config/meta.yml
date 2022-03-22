@@ -3,7 +3,7 @@
 meta_product_name: "Perfect Present"
 meta_title: "Perfect Present - Buying a special gift has never been this easy."
 meta_description: "Buying a thoughtful gift for a special someone, can be a
-    time-consuming and stressful process. The Perfect Present Team helps you
-    find the Perfect Present!"
+                  time-consuming and stressful process. The Perfect Present
+                  Team helps you find the Perfect Present!"
 meta_image: "cover.png" # should exist in `app/assets/images/`
 twitter_account: "@perfectpresent_twitter_account"   # required for Twitter Cards

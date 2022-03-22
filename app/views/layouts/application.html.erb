@@ -3,15 +3,15 @@
   <head>
     <title>PerfectPresent</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+      <%= csrf_meta_tags %>
+      <%= csp_meta_tag %>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+      <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
 
     <link rel="shortcut icon" type="image/x-icon" href="https://res.cloudinary.com/vmontenegro7/image/upload/v1647033402/Perfect%20Present/Perfect_Present_-_Navbar_Logo_-bg_txt_T.1_mntu2h.png"/>
     <title><%= meta_title %></title>
-      <meta name="description" content="<%= meta_description %>">
+    <meta name="description" content="<%= meta_description %>">
 
       <!-- Facebook Open Graph data -->
       <meta property="og:title" content="<%= meta_title %>" />
@@ -29,12 +29,12 @@
       <meta name="twitter:creator" content="<%= DEFAULT_META["twitter_account"] %>">
       <meta name="twitter:image:src" content="<%= meta_image %>">
 
-    <%# <link rel="shortcut icon" type="image/x-icon" href="https://res.cloudinary.com/vmontenegro7/image/upload/v1647033402/Perfect%20Present/Perfect_Present_-_Navbar_Logo_-bg_txt_T.1_mntu2h.png"/> %>
+      <%# <link rel="shortcut icon" type="image/x-icon" href="https://res.cloudinary.com/vmontenegro7/image/upload/v1647033402/Perfect%20Present/Perfect_Present_-_Navbar_Logo_-bg_txt_T.1_mntu2h.png"/> %>
     <%= favicon_link_tag %>
 
   </head>
   <body style="background-color: #ffffff;">
-  <div class="page-container">
+    <div class="page-container">
       <%= render "shared/navbar" if controller_name == 'pages' || controller_name == 'presents' || controller_name == 'wishlists'%>
       <main id="main-content">
         <%= yield %>
