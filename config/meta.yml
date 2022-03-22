@@ -5,5 +5,5 @@ meta_title: "Perfect Present - Buying a special gift has never been this easy."
 meta_description: "Buying a thoughtful gift for a special someone, can be a
                   time-consuming and stressful process. The Perfect Present
                   Team helps you find the Perfect Present!"
-meta_image: "cover.png" # should exist in `app/assets/images/`
+meta_image: "https://res.cloudinary.com/vmontenegro7/image/upload/c_scale,w_1200/v1647957026/Perfect%20Present/Perfect-Present-01_rudczg.png" # should exist in `app/assets/images/`
 twitter_account: "@perfectpresent_twitter_account"   # required for Twitter Cards
